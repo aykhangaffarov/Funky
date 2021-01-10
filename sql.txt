@@ -1,0 +1,96 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 18, 2019 at 04:06 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `fun`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account`
+--
+
+CREATE TABLE `account` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `favoritecolor` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `account`
+--
+
+INSERT INTO `account` (`id`, `username`, `password`, `favoritecolor`) VALUES
+(1, 'admin', 'admin', 'blue'),
+(3, 'shukur', '753198624', 'dark_blue'),
+(4, 'ayxan', 'ayxan', 'red');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `text` text NOT NULL,
+  `userid` int(11) NOT NULL,
+  `likenum` int(11) DEFAULT NULL,
+  `dislikenum` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `text`, `userid`, `likenum`, `dislikenum`) VALUES
+(1, 'Doctor', 'Doctor: You\'re obese.\r\n-\r\nPatient: For that I definitely want a second opinion.\r\n-\r\nDoctor: You’re quite ugly, too.', 2, 3, 0),
+(2, 'Joke2', 'Tonight I dreamt of a beautiful walk on a sandy beach.\r\n \r\nAt least that explains the footprints I found in the cat litter box this morning.', 3, 7, 0),
+(3, 'Milking It', 'What do you get when you cross-breed a shark and a cow?\r\n\r\nI have no idea but I wouldn’t try milking it.', 1, 6, 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `account`
+--
+ALTER TABLE `account`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `account`
+--
+ALTER TABLE `account`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;

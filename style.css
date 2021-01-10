@@ -1,0 +1,149 @@
+
+* {
+	box-sizing: border-box;
+}
+#loginbody{
+	background-image: url("img/bg2.jpg");
+	background-size:100% 100%;
+}
+.login header{
+	font: bold 2em Arial;
+	text-align: center;
+	text-shadow: 1px 1px 3px black;
+	color: white;
+	padding: 20px;
+}
+
+#box{
+	border: 2px solid #672f2f;
+	border-radius:10px;
+	box-shadow:0 0 5px 2px;
+	padding: 30px 20px 30px 20px;
+	margin:5% 10%;
+	width: 250px;
+	color: #672f2f;
+	background-color:white;
+	text-align:center;
+}
+#box p{
+	color:red;
+	font-size:1.05em;
+	font-weight:bold;
+}
+
+.login form input{
+	margin-top:10px;
+	box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 5px;
+	padding: 7px;
+	outline: none;
+	
+}
+.login form input[type=submit]{
+	background-color:#1d4d4f;
+	color:white;
+	cursor:pointer;
+}
+.login form input:focus{
+	border: 1px solid #9d0b0b;
+}
+.login form input[type=submit]:focus{
+	color:#dff6f0;
+	background-color:white;
+	cursor:pointer;
+}
+#message{
+	color:red;
+	font-size:1em;
+}
+
+#mainbody{
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+.main header{
+	width:100%;
+	height:9.7%;
+	background-color:#2d132c;
+	box-shadow: 0px 1px 1px 1px rgb(216,148,10);
+	margin-bottom:2px;
+}
+
+.rating{
+	width:18%;
+	min-height:90%;
+	float:left;
+	background-color:#d7c79e;
+}
+
+#posts{
+	width:64%;
+	min-height:90%;
+	float:left;
+	text-align:center;
+	background-color: #f1f1f1f1;
+	padding-top:2%;
+}
+
+#slidecontainer{
+	width:70%;
+	margin:auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	background-color:#e5d8bf;
+	box-shadow: 0px 0px 1px 1px rgb(216,148,10);
+	border-radius:25px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 30px;
+}
+.main header img{
+	margin-left:80px;
+	margin-right:20px;
+	width:60px;
+	height:60px;
+	float:left;
+}
+.main header h2{
+	padding-top:15px;
+	color:white;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {
+	color: silver;
+	margin-right:0px;
+	}
+
+.mySlides h2 {
+	color:cornflowerblue;
+}
+
+.posts img{
+	cursor:pointer;	
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#laugh:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+#poop:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.storyid{
+}
